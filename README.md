@@ -19,4 +19,11 @@ $ npm start
 $ npm run generate
 ```
 
+<!-- echo "# nuxt-firestore" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/OBSK/nuxt-firestore.git
+git push -u origin master -->
+
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
