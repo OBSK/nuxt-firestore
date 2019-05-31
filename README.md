@@ -25,5 +25,6 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/OBSK/nuxt-firestore.git
 git push -u origin master -->
+<!-- git branch --set-upstream-to=origin/master master -->
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).

@@ -48,7 +48,7 @@
       >
         <v-icon>remove</v-icon>
       </v-btn>
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title v-text="appTitle" />
       <v-spacer />
       <v-btn
         icon
@@ -85,6 +85,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
   data() {
     return {
@@ -108,6 +109,11 @@ export default {
       rightDrawer: false,
       title: 'Vuetify.js'
     }
-  }
+  },
+  computed: {
+    ...mapGetters({
+      appTitle: 'modules/client/getAppTitle'
+    })
+  },
 }
 </script>
