@@ -18,7 +18,11 @@ const actions = {
         }
     }
 }
-const getters = {}
+const getters = {
+    getAppTitle(state) {
+        
+    }
+}
 
 export default {
     state,
