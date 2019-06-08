@@ -8,6 +8,7 @@ admin.initializeApp({
 });
 
 var db = admin.firestore();
+
 router.post('/cliente', (req, res) => {
     var docRef = db.collection('users').doc('alovelace');
 
