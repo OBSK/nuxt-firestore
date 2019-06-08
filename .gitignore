@@ -38,6 +38,7 @@ build/Release
 node_modules/
 jspm_packages/
 plugins/firebase.js
+server/endpoint/account.json
 
 # TypeScript v1 declaration files
 typings/

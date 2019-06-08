@@ -1,5 +1,6 @@
-import { fireDB } from "../../plugins/firebase";
+//import { fireDB } from "../../plugins/firebase";
 import _ from 'lodash'
+import axios from 'axios'
 
 const state = {
     appTitle: 'Sistema de registro de clientes',
@@ -34,16 +35,19 @@ const mutations = {
 
 const actions = {
     async writeToFirestore ({commit}, payload) {
-        const ref = fireDB.collection("client")
-        const document = {
-            text: payload
-        }
-        try {
-            await ref.add(document)
-            commit('setWriteSuccessful', true)
-        } catch (e) {
-            console.log(e, ">>error")
-        }
+        axios.post('/cliente', {
+            text: "hola mundo"
+        })
+        // const ref = fireDB.collection("client")
+        // const document = {
+        //     text: payload
+        // }
+        // try {
+        //     await ref.add(document)
+        //     commit('setWriteSuccessful', true)
+        // } catch (e) {
+        //     console.log(e, ">>error")
+        // }
     },
     async readToFirestore ({commit}) {
         const ref = fireDB.collection("client")

@@ -17,7 +17,7 @@
           </v-flex>
           <v-flex xs12 sm6 md6>
             <v-list>
-              <v-list-tile v-for="item in text" :key='text.id' avatar>
+              <v-list-tile v-for="item in text" :key='item.id' avatar>
                 <v-list-tile-content v-text="item.nombre"></v-list-tile-content>
                 <v-btn>Eliminar</v-btn>
               </v-list-tile>
